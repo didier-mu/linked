@@ -1,4 +1,4 @@
-import"./bootstrap.esm.b1fee876.js";document.querySelector("header").innerHTML=`
+document.querySelector("header").innerHTML=`
   
         <div class="container-fluid">
           <div class="row">

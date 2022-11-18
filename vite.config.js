@@ -21,7 +21,7 @@ export default defineConfig({
             input: {
                 main: resolve("./src", "index.html"),
                 projects: resolve("./src/", "projects.html"),
-                projectsDetail: resolve("./src/", "project-detail.html"),
+                detail: resolve("./src/", "project-detail.html"),
             },
 
             // output: {

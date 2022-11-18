@@ -1,0 +1,98 @@
+.project-detail {
+    .project__item {
+        margin-bottom: 2em;
+
+        h1 {
+            font-size: var(--h5);
+            color: #fff;
+            font-family: var(--primaria-regular);
+            position: absolute;
+            top: 5em;
+            left: 0;
+            right: 0;
+        }
+
+        &--info {
+            padding-top: 9em;
+            position: relative;
+
+            & > div {
+                padding-left: 3em;
+            }
+
+            &--cat {
+                font-family: var(--primaria-regular);
+                color: var(--naranja);
+                text-transform: uppercase;
+                margin-bottom: 1.5em;
+
+                &::before {
+                    content: "\2192";
+                    margin-right: 0.3em;
+                }
+            }
+        }
+
+        &--image {
+            picture {
+                height: 620px;
+                border-radius: 0 0 5px 5px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .projects__quotes {
+        margin: 1em auto;
+    }
+
+    .gallery {
+        min-height: 700px;
+        position: relative;
+
+        .swiper {
+            &-slide {
+                display: grid;
+                place-content: center;
+                position: relative;
+
+                picture {
+                    position: absolute;
+
+                    img {
+                        max-width: 500px;
+                        max-height: 400px;
+                    }
+
+                    &:nth-child(1) {
+                        left: 0;
+                        top: 12em;
+                    }
+                    &:nth-child(2) {
+                        left: 15%;
+                        top: 5em;
+                        z-index: 1;
+                    }
+                    &:nth-child(3) {
+                        left: 20%;
+                        top: 0;
+                    }
+                    &:nth-child(4) {
+                        left: 40%;
+                        top: 12em;
+                        z-index: 2;
+                    }
+                    &:nth-child(5) {
+                        right: 5%;
+                        top: 3em;
+                        z-index: 1;
+                    }
+                    &:nth-child(6) {
+                        right: 0;
+                        top: 15em;
+                    }
+                }
+            }
+        }
+    }
+}
