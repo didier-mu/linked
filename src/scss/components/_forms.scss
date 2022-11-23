@@ -1,25 +1,40 @@
 @mixin boton {
     appearance: none;
-    border: 0;
     outline: 0;
-    background: #fff;
-    min-width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 5px 30px 0;
+    border-radius: 5px;
     text-transform: uppercase;
-    transition: .3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+
     &.prm {
-        background: var(--naranja);
-        color: #fff;
+        background: var(--gris-claro);
+        color: var(--gris-dark);
+        border: 1px solid var(--gris-dark);
+        height: 40px;
+        font-size: var(--h6);
+
         @media (hover: hover) {
             &:hover {
                 background: var(--azul);
             }
         }
+
+        &.big {
+            background: var(--rosa-dark);
+            color: #fff;
+            height: 100px;
+            padding: 0 1em;
+            font-size: var(--h4);
+
+            @media (hover: hover) {
+                &:hover {
+                    background: #fff;
+                    color: var(--rosa-dark);
+                }
+            }
+        }
     }
-    @media (max-width:992px) {
+
+    @media (max-width: 992px) {
         min-width: auto;
         width: 100%;
         height: 40px;
@@ -31,7 +46,7 @@
     .boton {
         margin: 0 15px;
     }
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
         flex-direction: column;
         width: 100%;
         a {
@@ -45,4 +60,216 @@
 
 .boton {
     @include boton;
+}
+
+@mixin input {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5em;
+
+    label {
+        color: #fff;
+        font-size: var(--h5);
+        transition: 0.2s ease-in-out all;
+        pointer-events: none;
+        text-transform: uppercase;
+        margin-bottom: 0.5em;
+    }
+
+    .error-input {
+        color: #000;
+        font-size: var(--h6);
+        order: 1;
+        margin-top: 0.4em;
+        display: none;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: -1.8em;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    &.active {
+        label {
+            top: -1em;
+            left: 0;
+            color: var(--txt-sec);
+            font-size: var(--h6);
+        }
+    }
+    &.valid {
+        label {
+            top: -1em;
+            left: 0;
+            color: var(--txt-prm);
+            font-size: var(--h6);
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        appearance: none;
+        outline: none;
+        border: none;
+        height: 40px;
+        padding: 1em;
+        width: 100%;
+        order: 2;
+        color: #fff;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 3px;
+
+        &::placeholder {
+            color: #335c85;
+        }
+
+        &:focus {
+            border: 1px solid var(--rosa-dark);
+            color: var(--rosa-dark);
+            // ~ label {
+            //     top: -1em;
+            //     left: 0;
+            //     color: var(--txt-sec);
+            //     font-size: var(--h6);
+            // }
+        }
+
+        // &:valid {
+        //     border: 1px solid var(--bg-sec);
+        // }
+    }
+
+    textarea {
+        resize: none;
+        height: calc(235px - 120 * ((100vw - 1280px) / 1920));
+
+        // &:focus {
+        //     border: 1px solid var(--rosa-dark);
+        //     // ~ label {
+        //     //     color: var(--bg-prm);
+        //     // }
+        // }
+    }
+
+    &.combo {
+        br {
+            display: none;
+        }
+        select {
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 100%;
+            padding: 0 1em;
+            order: 2;
+            cursor: pointer;
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            // color: #fff;
+            color: #335c85;
+
+            &:focus {
+                border: 1px solid var(--rosa-dark);
+                // ~ label {
+                //     top: -1em;
+                //     left: 0;
+                //     color: var(--txt-sec);
+                //     font-size: var(--h6);
+                // }
+            }
+
+            &:valid {
+                color: #fff;
+                // ~ label {
+                //     top: -1em;
+                //     left: 0;
+                //     font-size: var(--h6);
+                // }
+            }
+        }
+    }
+
+    &.input-checkbox {
+        align-items: center;
+        flex-direction: row;
+        cursor: pointer;
+
+        &.valid,
+        &.active {
+            label {
+                top: 0;
+                left: 1em;
+                color: var(--txt-prm);
+            }
+        }
+
+        label {
+            position: relative;
+            top: 0 !important;
+            font-size: var(--h5);
+            pointer-events: initial;
+            cursor: pointer;
+            left: 1em;
+        }
+
+        input {
+            appearance: none;
+            cursor: pointer;
+            border: 1px solid var(--bg-prm);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            padding: 0;
+            background: #fff;
+
+            &:checked {
+                background: var(--bg-prm);
+
+                label {
+                    font-size: var(--h5);
+                }
+            }
+            &:focus {
+                border-color: var(--bg-prm);
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        label {
+            top: calc(32px - 12 * ((100vw - 768px) / 1024));
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        label {
+            top: calc(15px - 12 * ((100vw - 360px) / 768));
+        }
+        input[type="text"] {
+            &:focus,
+            &:valid {
+                ~ label {
+                    top: -1.5em;
+                }
+            }
+        }
+    }
+}
+
+.input__group,
+.combo {
+    @include input;
 }

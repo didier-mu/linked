@@ -29,6 +29,10 @@
             opacity: 0;
             transition: 0.4s ease-in-out all;
 
+            a {
+                z-index: 1;
+            }
+
             h3 {
                 margin-bottom: 0.5em;
             }
@@ -47,10 +51,18 @@
             &--project,
             h3 {
                 z-index: 1;
+                color: #fff;
             }
 
             &--project {
                 margin-bottom: 1.5em;
+
+                h6,
+                h5,
+                h4 {
+                    color: #fff;
+                }
+
                 &--data {
                     display: flex;
                     align-items: center;
@@ -129,7 +141,7 @@
                 &:hover {
                     li {
                         transition: 0.3s ease-in-out all;
-                        filter: invert(1);
+                        color: var(--dark);
                     }
                 }
             }
@@ -161,10 +173,12 @@
 
 .projects-home {
     &__acceso {
-        color: #fff;
         margin-bottom: 3em;
-
+        h3 {
+            color: #fff;
+        }
         a {
+            color: #fff;
             display: grid;
             place-items: center;
             height: 100%;

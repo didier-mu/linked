@@ -3,8 +3,13 @@ body {
     @import "header";
     @import "footer";
     @import "media";
+
     @import "../pages/globals";
     @import "../pages/_home";
     @import "../pages/_projects";
     @import "../pages/_project-detail";
+    @import "../pages/_writing";
+    @import "../pages/_writing-detail";
+    @import "../pages/_about";
+    @import "../pages/_connect";
 }

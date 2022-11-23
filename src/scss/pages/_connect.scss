@@ -1,0 +1,28 @@
+.connect {
+    background: var(--azul-marino);
+    padding: 8em 0;
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: var(--primaria-regular);
+        font-size: var(--h2);
+        padding-left: 1.5em;
+    }
+
+    &--form {
+        h5 {
+            color: var(--rosa-dark);
+            margin-bottom: 1em;
+        }
+
+        .boton {
+            width: 100%;
+        }
+    }
+
+    &--disclaimer {
+        color: #fff !important;
+        font-family: var(--secundaria-regular);
+    }
+}

@@ -1,0 +1,26 @@
+extends includes/head.pug
+block head-page
+    title Linked | About
+
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.about
+        section 
+            .container-fluid 
+                .row 
+                    .offset-lg-1.col-lg-5.about--image 
+                        picture 
+                            source(srcset="img/about.webp", type="image/webp")
+                            img.img-fluid(src="img/about.jpg", alt="")
+
+                    .col-lg-5.about--info
+                        h1
+                            sup Hi i'm Matei Denes
+                            | “We are not men and women, we are humans, we are nature, we are things, projects are things, they are nature, they are human, they are us.”
+
+
+
+    include includes/footer-full.pug

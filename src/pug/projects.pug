@@ -1,0 +1,158 @@
+extends includes/head.pug
+block head-page
+    title Linked | Projects
+    script(src="js/animaciones-projects.min.js" defer)
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.projects
+        section.grid
+            .container.grid--head
+                h1.text-center PROJECTS
+                .row.mt-5.mb-5
+                    .col-lg-7
+                        a(href='project-detail.html')
+                            .row.project__item
+                                .col-lg-3.project__info
+                                    h6 PROJECT
+                                    h4.project__name Pitesti
+                                    ul
+                                        li Sustainable
+                                        li Builded
+                                        li Enviromental
+                                    h6.project__date 2015
+                                    h6.project__country.
+
+                                        Romania
+
+                                    h6.project__location.
+
+                                        21 273, 92 sqm
+
+                                .col-lg-7
+                                    picture
+                                        source(srcset='img/images1.jpg', type='image/webp')
+                                        img.img-fluid(src='img/images1.jpg' alt)
+
+                                .col-lg-2.project__item__place
+                                    ul
+                                        li Sustainable
+                                        li Builded
+                                        li Enviromental
+
+                    .col-lg-5
+                        h3.grid__description
+                            sup Sustainable
+                            | The capacity to maintain or improve the state and availability of desirable materials or conditions over the long terms into environments.
+
+            .container-fluid#quotes-one
+                p.projects__quotes The capacity to maintain or improve the state and availability of desirable materials or conditions over the long terms into environments.
+
+            .container.grid--wrap#grid--wrap-one
+                a(href='project-detail.html')
+                    .row.project__item
+                        .col-lg-3.project__info
+                            h6 PROJECT
+                            h4.project__name Pitesti
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                            h6.project__date 2015
+                            h6.project__country Romania
+                            h6.project__location.
+
+                                21 273, 92 sqm
+
+                        .col-lg-7
+                            picture
+                                source(srcset='img/images1.jpg', type='image/webp')
+                                img.img-fluid(src='img/images1.jpg' alt)
+                        .col-lg-2.project__item__place
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                a(href='project-detail.html')
+                    .row.project__item
+                        .col-lg-3.project__info
+                            h6 PROJECT
+                            h4.project__name Pitesti
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                            h6.project__date 2015
+                            h6.project__country Romania
+                            h6.project__location.
+
+                                21 273, 92 sqm
+
+                        .col-lg-7
+                            picture
+                                source(srcset='img/images1.jpg', type='image/webp')
+                                img.img-fluid(src='img/images1.jpg' alt)
+                        .col-lg-2.project__item__place
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+
+            .container-fluid#quotes-two
+                p.projects__quotes.
+
+                    The capacity to maintain or improve the state and availability of desirable materials or conditions over the long terms into environments.
+
+            .container.grid--wrap#grid--wrap-two
+                a(href='project-detail.html')
+                    .row.project__item
+                        .col-lg-3.project__info
+                            h6 PROJECT
+                            h4.project__name Pitesti
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                            h6.project__date 2015
+                            h6.project__country Romania
+                            h6.project__location.
+
+                                21 273, 92 sqm
+
+                        .col-lg-7
+                            picture
+                                source(srcset='img/images1.jpg', type='image/webp')
+                                img.img-fluid(src='img/images1.jpg' alt)
+                        .col-lg-2.project__item__place
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                a(href='project-detail.html')
+                    .row.project__item
+                        .col-lg-3.project__info
+                            h6 PROJECT
+                            h4.project__name Pitesti
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                            h6.project__date 2015
+                            h6.project__country Romania
+                            h6.project__location.
+
+                                21 273, 92 sqm
+
+                        .col-lg-7
+                            picture
+                                source(srcset='img/images1.jpg', type='image/webp')
+                                img.img-fluid(src='img/images1.jpg' alt)
+                        .col-lg-2.project__item__place
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+
+    include includes/footer.pug

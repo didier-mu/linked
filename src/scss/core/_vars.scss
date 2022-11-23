@@ -3,10 +3,13 @@
     --rosa: #ffa0b4;
     --rosa-dark: #ff64a0;
     --azul-rey: #0099ff;
+    --azul-marino: #003366;
     --verde: #00cc33;
     --verde-limon: #ccff00;
     --naranja: #ff6600;
     --gris-claro: #f0f0f0;
+    --gris-medio: #e6e6e6;
+    --gris-title: #d2d2d2;
     --gris: #8a8f9c;
     --gris-dark: #46505c;
     --dark: #151e2a;
@@ -19,12 +22,13 @@
     --secundaria-regular: "APKGaleria-regular";
     // --tercera-regular: "hanson-bold", sans-serif;
 
-    --h1: calc(64px + 10 * ((100vw - 1280px) / 1920));
+    --txt-big: calc(84px + 10 * ((100vw - 1280px) / 1920));
+    --h1: calc(64px + 80 * ((100vw - 1280px) / 1920));
     --h2: calc(36px + 10 * ((100vw - 1280px) / 1920));
-    --h3: calc(32px + 10 * ((100vw - 1280px) / 1920));
+    --h3: calc(32px + 60 * ((100vw - 1280px) / 1920));
     --h4: calc(24px + 10 * ((100vw - 1280px) / 1920));
     --h5: calc(16px + 10 * ((100vw - 1280px) / 1920));
-    --h6: calc(10px + 10 * ((100vw - 1280px) / 1920));
+    --h6: calc(10px + 20 * ((100vw - 1280px) / 1920));
 
     /// SECTIONS
     --paddingSection: 80px 40px;

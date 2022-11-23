@@ -1,0 +1,34 @@
+extends includes/head.pug
+block head-page
+    title Linked | Writing
+
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.writing 
+        section.papers 
+            h1.text-center PAPERS 
+            .container-fluid 
+                .row 
+                    - var n = 0;
+                    while n < 7
+                        - ++n
+                        .col-12.papers__item
+                            a(href="writing-detail.html") 
+                                p 
+                                    sup ESSAY  
+                                    | I do write sometimes with the peacufl purpose of settle down ideas that arrives into the wild while  I'm hands on handshakes for the distances and […]
+
+                                h3
+                                    sup READ MORE
+                                    | Parametric What?
+
+
+
+
+
+
+
+    include includes/footer.pug

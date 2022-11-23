@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="og:title" property="og:title" content="Ocesa | Querida">
+    <meta name="og:description" property="og:description" content="...">
+    <meta name="og:image" property="og:image" content="https://cdn-querida.s3.amazonaws.com/share.jpg">
+    <meta property="og:url" content="https://escenarioocesa.com.mx/querida"><!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" defer></script><!-- GLOBALS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  </head><!-- End Google Tag Manager -->
+  <title>Linked | Connect</title>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-lg-2 header--logo"><a href="../"><img class="img-fluid logo-header" src="img/logo-linked-blanco.svg" alt></a></div>
+          <div class="col-lg-10 col-6 header--navegacion d-flex">
+            <nav>
+              <div class="btn-ham" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="ham-top"></span><span class="ham-btm"></span></div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul><a id="li-projects" href="projects.html">
+                    <li>Projects<sup>(100)</sup></li></a><a id="li-writing" href="writing.html">
+                    <li>Writing<sup>(100)</sup></li></a><a id="li-about" href="about.html">
+                    <li>About<sup>(100)</sup></li></a><a id="li-teaching" href="teaching.html">
+                    <li>Teaching<sup>(100)</sup></li></a></ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="connect">
+      <section>
+        <div class="container-fluid"> 
+          <div class="row"> 
+            <div class="col-lg-4 connect--title">
+              <h1>what want <br>to know you</h1>
+            </div>
+            <div class="col-lg-4 connect--form">
+              <h5>CONTACT INFORMATION</h5>
+              <form id="form-contacto" action="" method="post">
+                <div class="input__group"><span>
+                    <input id="input-name" type="text" name="" placeholder="FULL NAME" required></span>
+                  <label>Nombre</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="input__group"><span>
+                    <input id="input-name" type="text" name="" placeholder="ENTER A VALID NAME" required></span>
+                  <label>Nombre</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="input__group"><span>
+                    <input id="input-name" type="text" name="" placeholder="VALID PHONE NUMBER W/ DIALING CODE" required></span>
+                  <label>Nombre</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="input__group"><span>
+                    <input id="input-name" type="text" name="" placeholder="WHERE ARE YOU COME FROM?" required></span>
+                  <label>Nombre</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="combo"><span> 
+                    <select id="input-curso" required>
+                      <option value="" selected hidden>HOW WE COULD CONNECT </option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select></span>
+                  <label>PURPOSE TO REACH OUT</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="combo"><span> 
+                    <select id="input-curso" required>
+                      <option value="" selected hidden>IMAGINE THE POSSIBILITIES</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select></span>
+                  <label>WHY ARE YOU REACHING OUT</label><span class="error-input">Campo requerido</span>
+                </div>
+                <div class="input__group"><span>
+                    <textarea id="msj-contacto" placeholder="DESCRIBE YOUR IDEA"></textarea></span>
+                  <label>MESSAGE </label>
+                  <h6 class="error-input">*Campo requerido</h6>
+                </div>
+                <h5 class="connect--disclaimer">By submitting this form, I agree to receive communications from linked in connection with my inquiry. My information will be processed in accordance with linked’s Privacy Policy.</h5>
+                <button class="boton prm big" type="submit">SEND IT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

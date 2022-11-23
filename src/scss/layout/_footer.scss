@@ -15,7 +15,7 @@
         }
     }
 
-    a {
+    &--connect {
         background: var(--verde-limon);
         padding: 1em 3em;
     }
@@ -28,6 +28,45 @@
             content: "\2192";
             font-family: x-large;
             transition: 0.3s ease-in-out all;
+        }
+    }
+
+    &--row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 54.333333%;
+    }
+
+    &--legales {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 70%;
+        padding: 0 1em;
+
+        h6,
+        a {
+            color: #fff;
+            font-size: var(--h6);
+            font-family: var(--secundaria-regular);
+        }
+    }
+
+    &--redes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 20%;
+
+        img {
+            max-width: 15px;
+            width: 100%;
         }
     }
 }

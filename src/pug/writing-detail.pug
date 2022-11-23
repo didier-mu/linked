@@ -1,0 +1,49 @@
+extends includes/head.pug
+block head-page
+    title Linked | Writing Detail
+
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.writing-detail
+        section.writing-detail--content
+            .container-fluid 
+                .row
+                    .col-lg-6.writing-detail--wrap-info
+                        .writing-detail--title
+                            h1.writing-detail--name
+                                sup.writing-detail--cat OPINION 
+                                | Structure & Openings
+
+                            h6.writing-detail--info
+                                span.writing-detail--autor Matei Denes
+                                span.writing-detail--date 22/07/22
+
+                        h3.writing-detail--resume I'll start from the beginning, as its been a long time since I talked about the work and project I’m working on.
+
+                        .writing-detail--wrap-text
+                            p.writing-detail--paragraph
+                                span.writing-detail--paragraph--let M
+                                |asters I’m in is called the Design Research Lab and is going into its 12 year. The focus of the program shifts every three years.  I am in the last year of the Parametric Urbanism agenda. So what does this all mean? Well, here is the prospectus from the program.  But to try and sum it up in my own words: Parametric Urbanism attempts to use new computer based design methods to incorporate complex informational parameters (such as traffic flows, solar orientation, etc.) Into the design process of urban and architectural proposals. Masters I’m in is called the Design Research Lab and is going into its 12 year. The focus of the program shifts every three years.  I am in the last year of the Parametric Urbanism agenda. So what does this all mean? Well, here is the prospectus from the program.  But to try and sum it up in my own words: Parametric Urbanism attempts to use new computer based design methods to incorporate complex informational parameters (such as traffic flows, solar orientation, etc.) into the design process of urban and architectural proposals. Masters I’m in is called the Design Research Lab and is going into its 12 year. The focus of the program shifts every three years.  I am in the last year of the Parametric Urbanism agenda. So what does this all mean? Well, here is the prospectus from the program.  But to try and sum it up in my own words:Parametric Urbanism attempts to use new computer based design methods to incorporate complex informational parameters (such as traffic flows, solar orientation, etc.) into the design process of urban and architectural proposals. Masters I’m in is called the Design Research Lab and is going into its 12 year. The focus of the program shifts every three years.  I am in the last year of the Parametric Urbanism agenda. So what does this all mean? […]
+
+                            a(href="#!", target="_blank", rel="noopener noreferrer" download) 
+                                button.boton.prm(type="button") PDF PAPER
+
+                    .col-lg-5.writing-detail--images 
+                        picture 
+                            source(srcset="img/layout.webp", type="image/webp")
+                            img.img-fluid(src="img/layout.jpg", alt="")
+
+                        picture 
+                            source(srcset="img/layout2.webp", type="image/webp")
+                            img.img-fluid(src="img/layout2.jpg", alt="")
+
+                        picture 
+                            source(srcset="img/layout4.webp", type="image/webp")
+                            img.img-fluid(src="img/layout4.jpg", alt="")
+
+
+
+    include includes/footer.pug

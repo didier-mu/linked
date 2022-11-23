@@ -47,16 +47,21 @@
     }
 
     .gallery {
-        min-height: 700px;
-        position: relative;
-
         .swiper {
+            overflow: initial;
+            overflow-y: clip;
+
+            &-wrapper {
+                position: relative;
+                height: 700px;
+            }
+
             &-slide {
-                display: grid;
-                place-content: center;
+                // display: grid;
+                // place-content: center;
                 position: relative;
 
-                picture {
+                a {
                     position: absolute;
 
                     img {
@@ -92,6 +97,50 @@
                         top: 15em;
                     }
                 }
+            }
+
+            &-pagination {
+                right: -20px;
+
+                .swiper-pagination-bullet {
+                    background: var(--naranja);
+                }
+            }
+
+            &-navigation {
+                display: none;
+                position: absolute;
+                right: 30px;
+                top: 0;
+                bottom: 0;
+                transform: rotateZ(270deg);
+                z-index: 1;
+
+                .swiper-button {
+                    &-next {
+                        left: 70px;
+                    }
+                }
+                // .swiper-button-prev,
+                // .swiper-button-next {
+                // }
+            }
+        }
+    }
+
+    .related {
+        margin-bottom: 3em;
+
+        .title-section {
+            color: var(--gris);
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+
+            &::after {
+                content: "\2192";
+                margin-right: 0.3em;
+                transform: rotateZ(90deg);
             }
         }
     }

@@ -1,0 +1,76 @@
+extends includes/head.pug
+block head-page
+    title Linked | Connect
+
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.connect
+        section
+            .container-fluid 
+                .row 
+                    .col-lg-4.connect--title
+                        h1 what want 
+                            br
+                            | to know you
+
+                    .col-lg-4.connect--form
+                        h5 CONTACT INFORMATION
+                        form(id="form-contacto", action="", method="post")
+                            .input__group
+                                span
+                                    input(id="input-name", type="text", name="", placeholder="FULL NAME" required)
+                                label Nombre
+                                span.error-input Campo requerido
+                            .input__group
+                                span
+                                    input(id="input-name", type="text", name="", placeholder="ENTER A VALID NAME" required)
+                                label Nombre
+                                span.error-input Campo requerido
+                            .input__group
+                                span
+                                    input(id="input-name", type="text", name="", placeholder="VALID PHONE NUMBER W/ DIALING CODE" required)
+                                label Nombre
+                                span.error-input Campo requerido
+                            .input__group
+                                span
+                                    input(id="input-name", type="text", name="", placeholder="WHERE ARE YOU COME FROM?" required)
+                                label Nombre
+                                span.error-input Campo requerido
+
+                            .combo
+                                span 
+                                    select(id="input-curso" required)
+                                        option(value="" selected hidden) HOW WE COULD CONNECT 
+                                        option(value="1") 1
+                                        option(value="2") 2
+                                        option(value="3") 3
+
+                                label PURPOSE TO REACH OUT
+                                span.error-input Campo requerido
+
+                            .combo
+                                span 
+                                    select(id="input-curso" required)
+                                        option(value="" selected hidden) IMAGINE THE POSSIBILITIES
+                                        option(value="1") 1
+                                        option(value="2") 2
+                                        option(value="3") 3
+
+                                label WHY ARE YOU REACHING OUT
+                                span.error-input Campo requerido
+
+                            .input__group
+                                span
+                                    textarea#msj-contacto(placeholder="DESCRIBE YOUR IDEA")
+                                label MESSAGE 
+                                h6.error-input *Campo requerido
+
+
+                            h5.connect--disclaimer By submitting this form, I agree to receive communications from linked in connection with my inquiry. My information will be processed in accordance with linked’s Privacy Policy.
+
+                            button.boton.prm.big(type="submit") SEND IT
+
+

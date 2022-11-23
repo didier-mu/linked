@@ -1,0 +1,223 @@
+extends includes/head.pug
+block head-page
+    title Linked | Project Detail
+    <!- SLIDER -->
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' defer)
+    script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer)
+    script(src="js/sliders.min.js" defer)
+
+block content
+    -ruta = ""
+    include includes/header.pug
+
+    main.project-detail
+        section.project__item
+            .container
+                h1.text-center PROJECTS
+                .row
+                    .col-lg-2.project__item--info
+                        h5.project__item--info--cat PITESTI
+                        .project__item
+                            h6 PROJECT
+                            h4.project__name Pitesti
+                            ul
+                                li Sustainable
+                                li Builded
+                                li Enviromental
+                            h6.project__date 2015
+                            h6.project__country Romania
+                            h6.project__location.
+
+                                21 273, 92 sqm
+
+                        .project__item__body
+                            h6.project__item__body__title.
+
+                                Body A
+
+                            p.
+
+                                office building whit height regime 35+P+10E
+
+                        .project__item__body
+                            h6.project__item__body__title.
+
+                                Body B
+
+                            p.
+
+                                office building whit height regime 35+P+10E
+
+                        .project__item__body
+                            h6.project__item__body__title.
+
+                                Body C
+
+                            p.
+
+                                office building whit height regime 35+P+10E
+
+                    .col-lg-9.project__item--image
+                        picture
+                            img.img-fluid(src='img/images1.jpg' alt)
+        .container-fluid
+            p.projects__quotes.
+
+                The capacity to maintain or improve the state and availability of desirable materials or conditions over the long terms into environments.
+
+        section.gallery
+            .container
+                .row
+                    .col-12
+                        .swiper.slider-detail
+                            .swiper-wrapper
+                                .swiper-slide
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout5.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout2.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout3.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout4.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout6.jpg' alt)
+
+                                .swiper-slide
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout5.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout2.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout3.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout4.jpg' alt)
+                                    a(href="") 
+                                        picture
+                                            img.img-fluid(src='img/layout6.jpg' alt)
+
+
+
+                            .swiper-pagination
+
+                            .swiper-navigation
+                                .swiper-button-prev
+                                .swiper-button-next
+
+        section.related 
+            .container-fluid 
+                h5.text-center.mb-4.title-section related projects
+
+                .row 
+                    .col-lg-4
+                        a(href='#!')
+                            .projects-home__card.d-flex.tipo-uno(categoria='Typology')
+                                .projects-home__card__images
+                                    .projects-home__card__images__img(titulo='Worl Trade Center')
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img(titulo='Transparencias')
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img(titulo='Agricultura')
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                h3.projects-home__card__title.
+
+                                    Typology
+
+                                .projects-home__card__hover
+                                    h5 PROJECTS
+                                    .projects-home__card__hover__projects
+                                        h5.projects-home__card__hover__title.
+
+                                            Worl Trade Center
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Transparencias
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Agricultura
+
+                                    h4 Typology
+
+                    .col-lg-4
+                        a(href)
+                            .projects-home__card.d-flex.tipo-dos(categoria='Contrast')
+                                .projects-home__card__images
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                h3.projects-home__card__title.
+
+                                    Contrast
+
+                                .projects-home__card__hover
+                                    h5 PROJECTS
+                                    .projects-home__card__hover__projects
+                                        h5.projects-home__card__hover__title.
+
+                                            Worl Trade Center
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Transparencias
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Agricultura
+
+                                    h4 Contrast
+
+                    .col-lg-4
+                        a(href)
+                            .projects-home__card.d-flex.tipo-uno(categoria='Terrain')
+                                .projects-home__card__images
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                    .projects-home__card__images__img
+                                        img.img-fluid(src='img/images1.jpg' alt)
+                                h3.projects-home__card__title.
+
+                                    Terrain
+
+                                .projects-home__card__hover
+                                    h5 PROJECTS
+                                    .projects-home__card__hover__projects
+                                        h5.projects-home__card__hover__title.
+
+                                            Worl Trade Center
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Transparencias
+
+                                        h5.projects-home__card__hover__title.
+
+                                            Agricultura
+
+                                    h4 Terrain
+
+
+        include includes/footer.pug
+
+    include includes/footer.pug

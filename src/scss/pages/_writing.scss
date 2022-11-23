@@ -1,0 +1,69 @@
+.writing {
+    .papers {
+        padding: 5em 0;
+
+        h1 {
+            font-size: var(--h5);
+            font-family: var(--primaria-regular);
+            color: var(--gris);
+        }
+
+        &__item {
+            padding-top: 4em;
+            transition: 0.3s ease-in-out all;
+
+            @media (hover: hover) {
+                &:hover {
+                    background: var(--gris-medio);
+                    * {
+                        color: var(--rosa-dark);
+                    }
+                }
+            }
+
+            &:last-child a {
+                border-bottom: none;
+            }
+
+            a {
+                border-bottom: 1px solid var(--gris);
+                display: block;
+                padding-bottom: 1.4em;
+            }
+
+            p {
+                font-size: var(--h1);
+                line-height: 1;
+                color: var(--gris);
+                font-family: var(--secundaria-regular);
+                margin-bottom: 0.5em;
+                transition: 0.3s ease-in-out all;
+                sup {
+                    top: -2em;
+                }
+            }
+
+            h3 {
+                color: var(--gris);
+                font-family: var(--secundaria-regular);
+                text-align: right;
+                transition: 0.3s ease-in-out all;
+
+                sup {
+                    top: -0.7em;
+                }
+            }
+
+            sup {
+                font-size: var(--h5);
+                font-family: var(--primaria-regular);
+                margin-right: 0.5em;
+
+                &::before {
+                    content: "\2192";
+                    margin-right: 0.3em;
+                }
+            }
+        }
+    }
+}

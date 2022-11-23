@@ -1,0 +1,30 @@
+header.header
+	.container-fluid
+		.row
+			.col-6.col-lg-2.header--logo
+				a(href='../')
+					img.img-fluid.logo-header(src='img/logo-linked-blanco.svg' alt)
+			.col-lg-10.col-6.header--navegacion.d-flex
+				nav
+					.btn-ham(data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+						span.ham-top
+						span.ham-btm
+					.collapse.navbar-collapse#navbarNav
+						ul
+							a#li-projects(href='projects.html')
+								li
+									| Projects
+									sup (100)
+							a#li-writing(href='writing.html')
+								li
+									| Writing
+									sup (100)
+							a#li-about(href='about.html')
+								li
+									| About
+									sup (100)
+							a#li-teaching(href='teaching.html')
+								li
+									| Teaching
+									sup (100)
+
