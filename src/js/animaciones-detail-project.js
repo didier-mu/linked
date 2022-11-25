@@ -40,11 +40,6 @@ const objLoadVertical = (elem) => {
     });
 };
 
-objLoad(".grid--head .project__info *");
-objLoad(".project__item__place *");
-objLoadVertical(".project__item picture");
-objLoadVertical(".grid__description");
-
 const animContenido = (trigger, elem) => {
     const controller = new ScrollMagic.Controller();
     const info = new ScrollMagic.Scene({
@@ -67,55 +62,7 @@ const animContenido = (trigger, elem) => {
             )
         )
         .addTo(controller);
-
-    // gsap.from(elem, {
-    //     yPercent: 10,
-    //     opacity: 0,
-    // });
-    // gsap.to(elem, {
-    //     yPercent: 0,
-    //     opacity: 1,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //         trigger: trigger,
-    //         start: "-=200 center",
-    //         end: "+=300",
-    //         scrub: 1,
-    //         toggleActions: "restart pause reverse pause",
-    //         // markers: true,
-    //     },
-    // });
 };
-
-animContenido("#quotes-one", "#quotes-one .projects__quotes");
-animContenido("#quotes-two", "#quotes-two .projects__quotes");
-
-const objParallax = (trigger, elem, posicion) => {
-    gsap.from(elem, {
-        yPercent: 0,
-    });
-
-    gsap.to(elem, {
-        yPercent: posicion,
-        ease: "none",
-        scrollTrigger: {
-            trigger: trigger,
-            start: "-=200 center",
-            end: "+=800",
-            scrub: 1,
-            toggleActions: "restart pause reverse pause",
-            // markers: true,
-        },
-    });
-};
-
-objParallax("#grid--wrap-one", "#grid--wrap-one .project__info", -10);
-objParallax("#grid--wrap-one", "#grid--wrap-one .project__item picture", -5);
-objParallax("#grid--wrap-one", "#grid--wrap-one .project__item__place", -120);
-
-objParallax("#grid--wrap-two", "#grid--wrap-two .project__info", -10);
-objParallax("#grid--wrap-two", "#grid--wrap-two .project__item picture", -5);
-objParallax("#grid--wrap-two", "#grid--wrap-two .project__item__place", -120);
 
 const objParallaxArray = (trigger, elem) => {
     let boletosArr = gsap.utils.toArray(elem);
@@ -148,5 +95,8 @@ const objParallaxArray = (trigger, elem) => {
     });
 };
 
-objParallaxArray("#grid--wrap-one", "#grid--wrap-one .project__item");
-objParallaxArray("#grid--wrap-two", "#grid--wrap-two .project__item");
+objParallaxArray(".related", ".related .projects-home__card");
+
+objLoad(".project__item .project__item--info *");
+objLoadVertical(".project__item .project__item--image *");
+animContenido(".projects__quotes", ".projects__quotes");

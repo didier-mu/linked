@@ -142,7 +142,7 @@ const animTitulos = (trigger, elem) => {
     const controller = new ScrollMagic.Controller();
     const info = new ScrollMagic.Scene({
         triggerElement: trigger,
-        triggerHook: "onEnter",
+        triggerHook: 0,
     })
         .setTween(
             TweenMax.fromTo(
@@ -161,16 +161,6 @@ const animTitulos = (trigger, elem) => {
         )
         .addTo(controller);
 };
-
-// objTitles(".boletos", ".boletos .title-section");
-// objTitles(".evento", ".evento .title-section");
-// objTitles(".faqs", ".faqs .title-section");
-// objTitles(".eventos", ".eventos .title-section");
-
-// animTitulos(".boletos", ".boletos .title-section");
-// animTitulos(".evento", ".evento .title-section");
-// animTitulos(".faqs", ".faqs .title-section");
-// animTitulos(".eventos", ".eventos .title-section");
 
 const animElem = (trigger, elem) => {
     const controller = new ScrollMagic.Controller();
@@ -195,13 +185,6 @@ const animElem = (trigger, elem) => {
         )
         .addTo(controller);
 };
-
-// animElem("h1", "h1");
-// animElem(".boletos--calendario", ".boletos--calendario");
-// animElem("#myTabContent", "#myTabContent");
-// animElem(".boletos--promo", ".boletos--promo");
-// animElem(".evento__item", ".evento__item");
-// animElem(".slider-eventos", ".slider-eventos");
 
 gsap.registerPlugin(ScrollTrigger);
 // const contentSections = gsap.utils.toArray("li");

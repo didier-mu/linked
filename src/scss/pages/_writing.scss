@@ -12,6 +12,10 @@
             padding-top: 4em;
             transition: 0.3s ease-in-out all;
 
+            &:nth-child(2) {
+                opacity: 1 !important;
+            }
+
             @media (hover: hover) {
                 &:hover {
                     background: var(--gris-medio);

@@ -1,11 +1,41 @@
+const animMenu = () => {
+    let boletosArr = gsap.utils.toArray("#navbarNav li");
+
+    boletosArr.forEach(function () {
+        gsap.fromTo(
+            boletosArr,
+            {
+                opacity: 0,
+                xPercent: 30,
+            },
+            {
+                duration: 0.1,
+                delay: 0.1,
+                opacity: 1,
+                xPercent: 0,
+                stagger: 0.1,
+                ease: "power2.out",
+            }
+        );
+    });
+};
+
 const nav = () => {
+    const navLinks = document.querySelectorAll("#navbarNav li");
+
     btnHam = document.querySelector(".btn-ham");
     btnHam.onclick = function () {
         document.querySelector("header").classList.toggle("nav-on");
         btnHam.classList.toggle("ham-on");
-    };
 
-    const navLinks = document.querySelectorAll("#navbarNav li");
+        if (this.getAttribute("aria-expanded") != "false") {
+            animMenu();
+        } else {
+            for (let elem of navLinks) {
+                elem.removeAttribute("style");
+            }
+        }
+    };
 
     for (let elem of navLinks) {
         elem.addEventListener("click", () => {
