@@ -9,7 +9,7 @@ block content
 
     main.connect
         section
-            .container-fluid 
+            .container-xl 
                 .row 
                     .col-lg-4.connect--title
                         h1 what want 
@@ -26,23 +26,23 @@ block content
                                 span.error-input Campo requerido
                             .input__group
                                 span
-                                    input(id="input-name", type="text", name="", placeholder="ENTER A VALID NAME" required)
-                                label Nombre
+                                    input(id="input-email", type="text", name="", placeholder="ENTER A VALID NAME" required)
+                                label Email
                                 span.error-input Campo requerido
                             .input__group
                                 span
-                                    input(id="input-name", type="text", name="", placeholder="VALID PHONE NUMBER W/ DIALING CODE" required)
-                                label Nombre
+                                    input(id="input-phone", type="text", name="", placeholder="VALID PHONE NUMBER W/ DIALING CODE" required)
+                                label Phone number
                                 span.error-input Campo requerido
                             .input__group
                                 span
-                                    input(id="input-name", type="text", name="", placeholder="WHERE ARE YOU COME FROM?" required)
-                                label Nombre
+                                    input(id="input-country", type="text", name="", placeholder="WHERE ARE YOU COME FROM?" required)
+                                label Country
                                 span.error-input Campo requerido
 
                             .combo
                                 span 
-                                    select(id="input-curso" required)
+                                    select(id="input-purpose" required)
                                         option(value="" selected hidden) HOW WE COULD CONNECT 
                                         option(value="1") 1
                                         option(value="2") 2
@@ -53,7 +53,7 @@ block content
 
                             .combo
                                 span 
-                                    select(id="input-curso" required)
+                                    select(id="input-why" required)
                                         option(value="" selected hidden) IMAGINE THE POSSIBILITIES
                                         option(value="1") 1
                                         option(value="2") 2
@@ -71,6 +71,6 @@ block content
 
                             h5.connect--disclaimer By submitting this form, I agree to receive communications from linked in connection with my inquiry. My information will be processed in accordance with linked’s Privacy Policy.
 
-                            button.boton.prm.big(type="submit") SEND IT
+                            button.boton.prm.big(id="btn-connect", type="submit") SEND IT
 
 

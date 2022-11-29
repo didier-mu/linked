@@ -3,6 +3,12 @@
     position: relative;
     font-family: var(--primaria-regular);
     background: var(--gris-claro);
+
+    .container-fluid {
+        padding-right: var(--bs-gutter-x, 2rem);
+        padding-left: var(--bs-gutter-x, 2rem);
+    }
+
     h1,
     h2,
     h3,

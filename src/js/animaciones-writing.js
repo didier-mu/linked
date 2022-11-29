@@ -12,7 +12,7 @@ const objParallaxArray = (elem) => {
                 start: "-=600",
                 end: "top bottom",
                 toggleActions: "restart pause reverse pause",
-                // immediateRender: false,
+                immediateRender: false,
                 // markers: true,
             },
         });

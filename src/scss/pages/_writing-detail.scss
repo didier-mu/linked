@@ -4,7 +4,7 @@
     }
 
     &--wrap-info {
-        padding-top: 10em;
+        padding-top: 8em;
     }
 
     &--title {
@@ -38,9 +38,9 @@
 
     &--resume {
         color: var(--azul-rey);
-        margin: 2em 0 1em;
+        margin: 1em 0;
         font-family: var(--secundaria-regular);
-        width: 80%;
+        width: 85%;
     }
 
     &--wrap-text {
@@ -79,6 +79,7 @@
 
         picture {
             height: calc(100vh / 3);
+            width: 92%;
             overflow: hidden;
             display: block;
             margin-bottom: 0.2em;

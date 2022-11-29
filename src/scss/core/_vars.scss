@@ -22,10 +22,11 @@
     --secundaria-regular: "APKGaleria-regular";
     // --tercera-regular: "hanson-bold", sans-serif;
 
-    --txt-big: calc(84px + 10 * ((100vw - 1280px) / 1920));
-    --h1: calc(64px + 80 * ((100vw - 1280px) / 1920));
-    --h2: calc(36px + 10 * ((100vw - 1280px) / 1920));
-    --h3: calc(32px + 60 * ((100vw - 1280px) / 1920));
+    --txt-big: calc(84px + 100 * ((100vw - 1280px) / 1920)); //
+    --h1: calc(64px + 78 * ((100vw - 1280px) / 1920)); //
+    --h1-1: calc(52px + 78 * ((100vw - 1280px) / 1920)); //
+    --h2: calc(36px + 60 * ((100vw - 1280px) / 1920)); //
+    --h3: calc(32px + 36 * ((100vw - 1280px) / 1920)); //
     --h4: calc(24px + 10 * ((100vw - 1280px) / 1920));
     --h5: calc(16px + 10 * ((100vw - 1280px) / 1920));
     --h6: calc(10px + 20 * ((100vw - 1280px) / 1920));

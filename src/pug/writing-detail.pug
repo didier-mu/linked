@@ -1,6 +1,7 @@
 extends includes/head.pug
 block head-page
     title Linked | Writing Detail
+    script(src="js/animaciones-detail-writing.min.js" defer)
 
 
 block content
@@ -9,7 +10,7 @@ block content
 
     main.writing-detail
         section.writing-detail--content
-            .container-fluid 
+            .container-xxl
                 .row
                     .col-lg-6.writing-detail--wrap-info
                         .writing-detail--title
@@ -31,7 +32,7 @@ block content
                             a(href="#!", target="_blank", rel="noopener noreferrer" download) 
                                 button.boton.prm(type="button") PDF PAPER
 
-                    .col-lg-5.writing-detail--images 
+                    .col-lg-6.writing-detail--images 
                         picture 
                             source(srcset="img/layout.webp", type="image/webp")
                             img.img-fluid(src="img/layout.jpg", alt="")
